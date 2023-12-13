@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    background-image: url(../images/whitebackground.jpg);
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+}
+
+.circles{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#galaxy{
+    background-image: url(../images/perfectgaalacy.gif);
+    width: 25vw;
+    height: 20vw;
+    animation:galaxymotion 20s linear infinite;
+    z-index:98;
+}
+
+#ice{
+    background-image: url(../images/pinkcircle.gif);
+    width: 10vw;
+    height: 10vw;
+    animation:icemotion 10s linear infinite;
+    z-index:96;
+}
+
+#lava{
+    background-image: url(../images/skibiditoiletworld.gif);
+    width: 10vw;
+    height: 10vw;
+    animation:lavamotion 14s linear infinite;
+    z-index:95;
+}
+
+#star{
+    background-image: url(../images/pinkegg.gif);
+    width: 25vw;
+    height: 15vw;
+    animation:lavamotion 17s linear infinite;
+    z-index:97;
+}
+
+@keyframes galaxymotion{
+    0%  {transform:translate(10vw, -40vw);}
+    100%{transform:translate(100vw, 50vw);}
+}
+
+@keyframes icemotion{
+    0%  {transform:translate(-10vw, 50vw);}
+    100%{transform:translate(100vw, -100vw);}
+}
+
+@keyframes lavamotion{
+    0%  {transform:translate(80vw, -10vw);}
+    100%{transform:translate(-100vw, 80vw);}
+}
+
+@keyframes starmotion{
+    0%  {transform:translate(75vw, 50vw);}
+    100%{transform:translate(-50vw, -10vw);}
+}
+
