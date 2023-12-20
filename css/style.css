@@ -30,9 +30,10 @@ body{
 
 #galaxy{
     background-image: url(../images/perfectgaalacy.gif);
+    left: 50%;
     width: 25vw;
     height: 20vw;
-    animation:galaxymotion 20s linear infinite;
+    animation:galaxymotion 2000s linear infinite;
     z-index:98;
 }
 
@@ -48,21 +49,25 @@ body{
     background-image: url(../images/skibiditoiletworld.gif);
     width: 10vw;
     height: 10vw;
+    top:10vw;
+    right:5vw;
     animation:lavamotion 14s linear infinite;
     z-index:95;
 }
 
 #star{
     background-image: url(../images/pinkegg.gif);
+    top:10vw;
+    right:10vw;
     width: 25vw;
     height: 15vw;
-    animation:lavamotion 17s linear infinite;
+    animation:starmotion 17s linear infinite;
     z-index:97;
 }
 
 @keyframes galaxymotion{
-    0%  {transform:translate(10vw, -40vw);}
-    100%{transform:translate(100vw, 50vw);}
+    0%  {transform:scale(0.1);}
+    100%{transform:scale(30.0);}
 }
 
 @keyframes icemotion{
@@ -71,12 +76,12 @@ body{
 }
 
 @keyframes lavamotion{
-    0%  {transform:translate(80vw, -10vw);}
-    100%{transform:translate(-100vw, 80vw);}
+    0%  {transform:skew(20deg,40deg);}
+    100%{transform:translate(30deg,50deg);}
 }
 
 @keyframes starmotion{
-    0%  {transform:translate(75vw, 50vw);}
-    100%{transform:translate(-50vw, -10vw);}
+    0%  {transform:rotate(90deg)}
+    100%{transform:rotate(180deg);}
 }
 
